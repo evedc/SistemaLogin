@@ -22,7 +22,8 @@ if(isset($_POST['email']) || isset($_POST['senha'])) {
                 session_start();
             }
 
-            $_SESSION['user'] = $usuario['id'];
+            $_SESSION['id'] = $usuario['id'];
+            $_SESSION['nome'] = $usuario['nome'];
 
         } else {
             echo "E-mail ou senha incorretos";
